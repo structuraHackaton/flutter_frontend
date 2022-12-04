@@ -1,4 +1,6 @@
 
+import 'package:mobile_frontend/views/ChoosePathScreen.dart';
+import 'package:mobile_frontend/views/EnterScreen.dart';
 import 'package:mobile_frontend/views/WelcomeScreen.dart';
 import 'package:mobile_frontend/views/homeView.dart';
 import 'package:flutter/material.dart';
@@ -24,7 +26,7 @@ class MyApp extends StatelessWidget {
               elevation: 0,
               centerTitle: true,
               iconTheme: const IconThemeData(color: Colors.black),)),
-      home: WelcomeScreen(),
+      home: ChoosePathScreen(),
     );
   }
 }
