@@ -1,16 +1,27 @@
-# mobile_frontend
+Данный проект представляет собой реализацию кейса "Виртуальная таврида" в рамках хакатона "StructuraHack".
 
-A new Flutter project.
+Мобильное приложение создано при помощи фреймоврка Flutter на языке Dart.
 
-## Getting Started
+За время хакатона были сделаны следующие экраны:
 
-This project is a starting point for a Flutter application.
+- Экран авторизации
+- Экран выбора маршрута
+- Экран с картой
+- Экран с информацией о маршруте
+- Экран с дополненной реальностью
 
-A few resources to get you started if this is your first Flutter project:
+Чтобы запустить данный проект, вам нужно сказать apk файл, находящийся на пути: build/app/outputs/apk/release/app-release.apk
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Команда проекта: 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+-Никита Долинин
+
+-Татьяна Лебедева 
+
+-Лана Ласурия 
+
+-Алексей Амамниашвили
+
+-Ангелина Румянцева 
+
+-Иван Петухов
