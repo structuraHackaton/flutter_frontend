@@ -39,6 +39,7 @@ dependencies:
   ar_flutter_plugin: ^0.7.3
   vector_math: ^2.1.2
   google_maps_flutter: ^2.2.1
+  geolocator: ^9.0.2
 
 dev_dependencies:
   flutter_test:

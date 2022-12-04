@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_frontend/views/MapScreen.dart';
 
 class ChoosePathScreen extends StatefulWidget {
   const ChoosePathScreen({Key? key}) : super(key: key);
@@ -40,7 +41,13 @@ class _ChoosePathScreenState extends State<ChoosePathScreen> {
                   color: Colors.transparent,
                   child: InkWell(
                     borderRadius: BorderRadius.circular(16),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) =>  MapSample()),
+                      );
+                    },
                     child: Center(
                       child: Text(
                         "Маршрут недели",
@@ -67,7 +74,13 @@ class _ChoosePathScreenState extends State<ChoosePathScreen> {
                   color: Colors.transparent,
                   child: InkWell(
                     borderRadius: BorderRadius.circular(16),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) =>  MapSample()),
+                      );
+                    },
                     child: Center(
                       child: Text(
                         "Маршрут по архетектурным местам",
@@ -95,7 +108,13 @@ class _ChoosePathScreenState extends State<ChoosePathScreen> {
                   color: Colors.transparent,
                   child: InkWell(
                     borderRadius: BorderRadius.circular(16),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) =>  MapSample()),
+                      );
+                    },
                     child: Center(
                       child: Text(
                         "Создать маршрут",

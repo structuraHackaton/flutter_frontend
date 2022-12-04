@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_frontend/views/EnterScreen.dart';
 
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -11,27 +12,37 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        constraints: BoxConstraints.expand(),
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-              image: AssetImage("assets/images/background.png"),
-              fit: BoxFit.cover),
-        ),
-        child: Column(
+      backgroundColor: Colors.white,
+      body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Image.asset('assets/images/logo.png'),
-            Text(
-              'Вас приветствует\n TravelLit',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 40,
-                fontWeight: FontWeight.w400,
+            Container(
+              width: 390,
+              height: 532,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.vertical(bottom: Radius.circular(48),
+               ),
+                  color: Color(0xff7DBCB1),
+              ),
+              child: Column(
+                children: [
+                  SizedBox(height: 190,),
+                  Image.asset('assets/images/logo.png'),
+                  Text(
+                    'Вас приветствует\n TravelLit',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 40,
+                      color: Colors.white,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+                ],
               ),
             ),
-            SizedBox(height: 75,),
+
+            SizedBox(height: 50),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 95),
               child: Container(
@@ -71,7 +82,13 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   color: Colors.transparent,
                   child: InkWell(
                     borderRadius: BorderRadius.circular(16),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const EnterScreen()),
+                      );
+                    },
                     child: Center(
                       child: Text(
                         "Войти ",
@@ -86,7 +103,6 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               ),
             ),
           ],
-        ),
       ),
     );
   }

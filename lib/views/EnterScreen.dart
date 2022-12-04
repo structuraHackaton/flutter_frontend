@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_frontend/views/ChoosePathScreen.dart';
 
 class EnterScreen extends StatefulWidget {
   const EnterScreen({Key? key}) : super(key: key);
@@ -64,7 +65,13 @@ class _EnterScreenState extends State<EnterScreen> {
                 color: Colors.transparent,
                 child: InkWell(
                   borderRadius: BorderRadius.circular(16),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ChoosePathScreen()),
+                    );
+                  },
                   child: Center(
                     child: Text(
                       "Войти",
