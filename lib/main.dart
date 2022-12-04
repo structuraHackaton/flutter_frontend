@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
               elevation: 0,
               centerTitle: true,
               iconTheme: const IconThemeData(color: Colors.black),)),
-      home: MapSample(),
+      home: WelcomeScreen(),
     );
   }
 }

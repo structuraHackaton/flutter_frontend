@@ -55,7 +55,13 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   color: Colors.transparent,
                   child: InkWell(
                     borderRadius: BorderRadius.circular(16),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const EnterScreen()),
+                      );
+                    },
                     child: Center(
                       child: Text(
                         "Создать аккаунт ",

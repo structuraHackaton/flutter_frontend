@@ -15,15 +15,13 @@ class _ChoosePathScreenState extends State<ChoosePathScreen> {
       body: Container(
         constraints: BoxConstraints.expand(),
         decoration: const BoxDecoration(
-          image: DecorationImage(
-              image: AssetImage("assets/images/background.png"),
-              fit: BoxFit.cover),
+          color: Colors.white,
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Image.asset('assets/images/logo.png'),
+            Image.asset('assets/images/logoDark.png'),
             Text('Выберите маршрут',
             style: TextStyle(
               fontSize: 35
@@ -36,7 +34,7 @@ class _ChoosePathScreenState extends State<ChoosePathScreen> {
                 decoration: BoxDecoration(
                     border: Border.all(width: 2, color: Colors.black),
                     borderRadius: BorderRadius.circular(16),
-                    color: Colors.transparent),
+                    color: Color(0xff7DBCB1)),
                 child: Material(
                   color: Colors.transparent,
                   child: InkWell(
@@ -52,6 +50,7 @@ class _ChoosePathScreenState extends State<ChoosePathScreen> {
                       child: Text(
                         "Маршрут недели",
                         style: TextStyle(
+                          color: Colors.white,
                           fontSize: 18,
                           fontWeight: FontWeight.w500,
                         ),
@@ -69,7 +68,7 @@ class _ChoosePathScreenState extends State<ChoosePathScreen> {
                 decoration: BoxDecoration(
                     border: Border.all(width: 2, color: Colors.black),
                     borderRadius: BorderRadius.circular(16),
-                    color: Colors.transparent),
+                    color: Color(0xff7DBCB1)),
                 child: Material(
                   color: Colors.transparent,
                   child: InkWell(
@@ -86,6 +85,7 @@ class _ChoosePathScreenState extends State<ChoosePathScreen> {
                         "Маршрут по архетектурным местам",
                         textAlign: TextAlign.center,
                         style: TextStyle(
+                          color: Colors.white,
                           fontSize: 18,
                           fontWeight: FontWeight.w500,
                         ),
@@ -103,7 +103,7 @@ class _ChoosePathScreenState extends State<ChoosePathScreen> {
                 decoration: BoxDecoration(
                     border: Border.all(width: 2, color: Colors.black),
                     borderRadius: BorderRadius.circular(16),
-                    color: Colors.transparent),
+                    color: Color(0xff7DBCB1)),
                 child: Material(
                   color: Colors.transparent,
                   child: InkWell(
@@ -119,6 +119,7 @@ class _ChoosePathScreenState extends State<ChoosePathScreen> {
                       child: Text(
                         "Создать маршрут",
                         style: TextStyle(
+                          color: Colors.white,
                           fontSize: 18,
                           fontWeight: FontWeight.w500,
                         ),

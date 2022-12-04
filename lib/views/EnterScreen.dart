@@ -12,40 +12,49 @@ class _EnterScreenState extends State<EnterScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        constraints: BoxConstraints.expand(),
-    decoration: const BoxDecoration(
-    image: DecorationImage(
-    image: AssetImage("assets/images/background.png"),
-    fit: BoxFit.cover),
-    ),
-    child: Column(
-      mainAxisAlignment: MainAxisAlignment.center,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Image.asset('assets/images/logo.png'),
-          Text('Войти',
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontSize: 35
-          ),),
+            Container(
+        width: 390,
+        height: 380,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.vertical(bottom: Radius.circular(48),
+          ),
+          color: Color(0xff7DBCB1),
+        ),
+        child: Column(
+          children: [
+            SizedBox(height: 50,),
+            Image.asset('assets/images/logo.png'),
+            Text('Войти',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  fontSize: 35,
+                color: Colors.white
+              ),),
+          ],
+        ),
+        ),
           SizedBox(height: 25,),
           Text('Почта',
-          textAlign: TextAlign.start,
-          style: TextStyle(
-            fontSize: 25
-          ),),
+            textAlign: TextAlign.start,
+            style: TextStyle(
+                fontSize: 25
+            ),),
           Container(
             margin: EdgeInsets.symmetric(horizontal: 95),
             child: TextFormField(
-
-            ),
+              decoration: InputDecoration(
+                contentPadding: EdgeInsets.symmetric(vertical: 40.0),
+            ),),
           ),
           SizedBox(height: 10,),
           Text('Пароль',
-          style: TextStyle(
-            fontSize: 25
-          ),),
+            style: TextStyle(
+                fontSize: 25
+            ),),
           Container(
             margin: EdgeInsets.symmetric(horizontal: 95),
             child: TextFormField(
@@ -85,9 +94,7 @@ class _EnterScreenState extends State<EnterScreen> {
               ),
             ),
           ),
-
         ],
-      ),
       ),
     );
   }
